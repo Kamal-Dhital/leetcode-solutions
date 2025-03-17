@@ -3,7 +3,4 @@ class Solution:
         if (num < 10):
             return num
         else:
-            quotient = num // 10
-            remainder = num % 10
-            sum_of_number = quotient + remainder
-            return Solution.addDigits(self, sum_of_number)
+            return Solution.addDigits(self, ((num // 10) + (num % 10)))
